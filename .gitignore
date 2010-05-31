@@ -1,0 +1,10 @@
+scommerce-ejb/target/
+scommerce-web/target/
+*.class
+#.gitignore
+.classpath
+.project
+.settings/
+.classpath
+.project
+.settings/
