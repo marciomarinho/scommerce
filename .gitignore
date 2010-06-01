@@ -1,5 +1,6 @@
 scommerce-ejb/target/
 scommerce-web/target/
+packaging/target/
 *.class
 #.gitignore
 .classpath

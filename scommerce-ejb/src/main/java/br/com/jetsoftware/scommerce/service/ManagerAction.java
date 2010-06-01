@@ -14,10 +14,8 @@ import org.jboss.seam.faces.FacesMessages;
 
 import br.com.jetsoftware.scommerce.domain.Person;
 
-import org.hibernate.validator.*;
-
-@Stateful
 @Name("manager")
+@Stateful
 public class ManagerAction implements Manager {
 	
 	@In

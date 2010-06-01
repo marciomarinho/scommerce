@@ -5,6 +5,9 @@
 <application>
   <display-name>packaging</display-name>
   <module>
+    <java>lib/jboss-seam-2.2.0.GA.jar</java>
+  </module>
+  <module>
     <web>
       <web-uri>scommerce-web.war</web-uri>
       <context-root>/scommerce-ejb-ex</context-root>
@@ -12,8 +15,5 @@
   </module>
   <module>
     <ejb>scommerce-ejb-1.0.jar</ejb>
-  </module>
-  <module>
-    <ejb>jboss-seam-2.2.0.GA.jar</ejb>
   </module>
 </application>
