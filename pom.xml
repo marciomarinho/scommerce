@@ -38,6 +38,7 @@
 
   <modules>
     <module>scommerce-ejb</module>
+    <module>scommerce-web</module>
   </modules>
  	<build>
 		<plugins>
