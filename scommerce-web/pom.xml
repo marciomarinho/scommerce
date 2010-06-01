@@ -5,11 +5,11 @@
   <parent>
     <artifactId>scommerce</artifactId>
     <groupId>br.com.jetsoftware.scommerce</groupId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
   </parent>
   <groupId>br.com.jetsoftware.scommerce</groupId>
   <artifactId>scommerce-web</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>war</packaging>
   <name>scommerce-web Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -17,11 +17,21 @@
     <finalName>scommerce-web</finalName>
   </build>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+	<dependency>
+		<groupId>com.sun.facelets</groupId>
+		<artifactId>jsf-facelets</artifactId>
+		<version>1.1.11</version>
+	</dependency>
+	<dependency>
+		<groupId>org.jboss.seam</groupId>
+		<artifactId>jboss-seam-ui</artifactId>
+		<version>2.2.0.GA</version>
+		<exclusions>
+			<exclusion>
+				<groupId>org.jboss.seam</groupId>
+				<artifactId>jboss-seam</artifactId>
+			</exclusion>
+		</exclusions>
+	</dependency>
   </dependencies>
 </project>
