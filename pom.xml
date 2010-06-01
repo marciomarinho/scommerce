@@ -37,7 +37,6 @@
   </repositories>
 
   <modules>
-    <module>scommerce-web</module>
     <module>scommerce-ejb</module>
   </modules>
  	<build>
