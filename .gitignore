@@ -8,3 +8,6 @@ scommerce-web/target/
 .classpath
 .project
 .settings/
+*.ear
+*.jar
+*.war

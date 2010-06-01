@@ -8,6 +8,6 @@
 		the pattern is determined by the context path of the web application
 		(defined in /packaging/pom.xml)
 	-->
-	<core:init jndi-pattern="seam-ejb-ex/#{ejbName}/local" />
+	<core:init jndi-pattern="scommerce-ejb-ex/#{ejbName}/local" />
 
 </components>
