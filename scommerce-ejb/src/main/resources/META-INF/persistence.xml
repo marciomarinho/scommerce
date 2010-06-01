@@ -6,16 +6,12 @@
 
              version="2.0">
 
-   <persistence-unit name="sample">
-
+   <persistence-unit name="scommerce-unit">
       <jta-data-source>java:/DefaultDS</jta-data-source>
-
       <properties>
-
          <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
-
          <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
-
+				 <property name="jboss.entity.manager.factory.jndi.name" value="java:/scommerceEntityManagerFactory"/>				 	
       </properties>
 
    </persistence-unit>

@@ -43,6 +43,11 @@
 							<contextRoot>/scommerce-ejb-ex</contextRoot>
 						</webModule>
 					</modules>
+					<jboss>
+             <version>4</version>
+             <unauthenticated-principal>guest</unauthenticated-principal>
+             <loader-repository>scommerce:archive=scommerce-ear.ear</loader-repository>
+           </jboss>
 				</configuration>
 			</plugin>
 		</plugins>

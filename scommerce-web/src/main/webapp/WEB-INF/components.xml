@@ -10,4 +10,7 @@
 	-->
 	<core:init jndi-pattern="scommerce-ejb-ex/#{ejbName}/local" />
 
+  <core:managed-persistence-context name="entityManager" auto-create="true"
+                persistence-unit-jndi-name="java:/scommerceEntityManagerFactory"/>
+        
 </components>
