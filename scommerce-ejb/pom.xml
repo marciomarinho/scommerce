@@ -5,14 +5,14 @@
   <parent>
     <artifactId>scommerce</artifactId>
     <groupId>br.com.jetsoftware.scommerce</groupId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
   </parent>
   <groupId>br.com.jetsoftware.scommerce</groupId>
   <artifactId>scommerce-ejb</artifactId>
   <version>1.0</version>
   <name>scommerce-ejb</name>
   <url>http://maven.apache.org</url>
-  <packaging>jar</packaging>
+  <packaging>ejb</packaging>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

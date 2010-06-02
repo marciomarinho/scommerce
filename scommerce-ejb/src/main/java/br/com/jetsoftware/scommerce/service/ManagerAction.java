@@ -14,9 +14,12 @@ import org.jboss.seam.faces.FacesMessages;
 
 import br.com.jetsoftware.scommerce.domain.Person;
 
-@Name("manager")
 @Stateful
+@Name("manager")
 public class ManagerAction implements Manager {
+	
+	public ManagerAction() {
+	}
 	
 	@In
 	private Person person;
