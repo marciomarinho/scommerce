@@ -13,7 +13,7 @@
 		<h:inputText value="#{person.name}" size="15" />
 		<br />
 		<h:commandButton type="submit" value="Say Hello"
-			action="#{manager.sayHello}" />
+			action="#{gerente.sayHello}" />
 	</h:form>
 
 </body>

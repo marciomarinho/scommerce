@@ -30,12 +30,12 @@
 							<bundleDir>lib</bundleDir>
 						</jarModule>
 						
-						<jarModule>
+						<!--<jarModule>
 							<groupId>org.jboss.seam</groupId>
 							<artifactId>jboss-seam</artifactId>
-							<includeInApplicationXml>true</includeInApplicationXml>
+							<includeInApplicationXml>false</includeInApplicationXml>
 							<bundleDir>lib</bundleDir>
-						</jarModule>
+						</jarModule>-->
 						
 						<webModule>
 							<groupId>br.com.jetsoftware.scommerce</groupId>
@@ -46,7 +46,7 @@
 					<jboss>
              <version>4</version>
              <unauthenticated-principal>guest</unauthenticated-principal>
-             <loader-repository>scommerce:archive=scommerce-ear.ear</loader-repository>
+             <loader-repository>seam.jboss.org:loader=scommerce-ear.ear</loader-repository>
            </jboss>
 				</configuration>
 			</plugin>
@@ -69,7 +69,7 @@
 			<groupId>org.jboss.seam</groupId>
 			<artifactId>jboss-seam</artifactId>
 			<version>2.2.0.GA</version>
-			<type>jar</type>
+			<type>ejb</type>
 			<exclusions>
 				<exclusion>
 					<groupId>javax.el</groupId>
@@ -80,7 +80,7 @@
 		<dependency>
 			<groupId>org.jboss.el</groupId>
 			<artifactId>jboss-el</artifactId>
-			<version>1.0_02.CR2</version>
+			<version>1.0_02.CR4</version>
 			<type>jar</type>
 			<exclusions>
 				<exclusion>

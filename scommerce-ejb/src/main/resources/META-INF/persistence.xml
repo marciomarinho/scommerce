@@ -4,13 +4,16 @@
              version="2.0">
 
    <persistence-unit name="scommerce-unit">
-      <jta-data-source>java:/DefaultDS</jta-data-source>
-      <properties>
-         <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
-         <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
-				 <property name="jboss.entity.manager.factory.jndi.name" value="java:/scommerceEntityManagerFactory"/>				 	
-      </properties>
-
+     <jta-data-source>java:/SCommerceDS</jta-data-source>
+	 <properties>
+       <property name="hibernate.hbm2ddl.auto" value="update" />
+       <property name="hibernate.show_sql" value="true" />
+       <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+       <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+       <!--<property name="hibernate.connection.username" value="root" />
+       <property name="hibernate.connection.password" value="12345"/>-->
+       <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/scommerce" />
+     </properties>
    </persistence-unit>
 
 </persistence>

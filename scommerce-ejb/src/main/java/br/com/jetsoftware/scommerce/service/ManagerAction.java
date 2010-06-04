@@ -1,5 +1,6 @@
 package br.com.jetsoftware.scommerce.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Remove;
@@ -15,7 +16,7 @@ import org.jboss.seam.faces.FacesMessages;
 import br.com.jetsoftware.scommerce.domain.Person;
 
 @Stateful
-@Name("manager")
+@Name("gerente")
 public class ManagerAction implements Manager {
 	
 	public ManagerAction() {
@@ -24,23 +25,26 @@ public class ManagerAction implements Manager {
 	@In
 	private Person person;
 	
-	@PersistenceContext
-	private EntityManager em;
+	//@PersistenceContext
+	//private EntityManager em;
 
 	@In
 	private FacesMessages facesMessages;
 	
 	@Out
-	private List<Person> fans;
+	private List<Person> fans = new ArrayList();
 	
 	public void sayHello () {
+	}
+	
+	/*public void sayHello () {
 		em.persist (person);
 		try {
 			fans = em.createQuery("select p from Person p").getResultList();
 		} catch (Exception e) {
 			//facesMessages.add("Has problem saving #{person.name}");
 		}
-	}
+	}*/
 	
 	@Remove
 	public void destroy () { }
